@@ -331,7 +331,7 @@ class NetworkProviderBuilder {
         const explorer = this.chooseExplorer();
 
         const tc = new TonClient4({
-            endpoint: await getHttpV4Endpoint({ network }),
+            endpoint: "https://testnet-v4.tonhubapi.com",
         });
 
         const sendProvider = await this.chooseSendProvider(network, tc);
